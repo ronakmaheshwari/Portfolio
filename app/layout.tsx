@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   description: "A terminal-style portfolio website",
     generator: 'reactJs',
     icons:{
-      icon : 'https://xntcmbrnuyvzjeupfbyt.supabase.co/storage/v1/object/public/uploads//portfolio.jpeg'
+      icon : '/portfolio.ico'
     }
 }
 
@@ -22,6 +22,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+       <head>
+          <link rel="icon" href="https://xntcmbrnuyvzjeupfbyt.supabase.co/storage/v1/object/public/uploads/portfolio.jpeg" />
+        </head>
       <body className={jetbrainsMono.className}>
         <Analytics />
         {children}
@@ -30,7 +33,5 @@ export default function RootLayout({
   )
 }
 
-
-
 import './globals.css'
-import Navbar from "@/components/ui/Navbar"
+
